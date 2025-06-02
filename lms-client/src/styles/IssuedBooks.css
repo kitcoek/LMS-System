@@ -1,0 +1,255 @@
+/* General Container Styling for Issue Books */
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #fff; 
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: black;
+} */
+
+
+.card.issue-books {
+  width: 100%;
+  max-width: 500px; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f5e8c7; 
+  text-align: center;
+}
+
+
+.card.issue-books h2 {
+  color: #007bff; 
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fff; 
+  border-radius: 5px;
+  background: transparent;
+  font-size: 16px;
+  color: #333; 
+  transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #666; 
+}
+
+/* Gray Labels */
+.form-label.text-gray {
+  font-weight: bold;
+  color: #666; 
+  margin-bottom: 5px;
+}
+
+input[readonly] {
+  background-color: transparent;
+  cursor: not-allowed;
+  color: #333; 
+}
+
+
+/* .table {
+  background-color:transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+  table-layout: auto;
+  font-size: 12px;
+  border: 1px solid #808080;
+}
+
+
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #808080;
+} */
+
+
+/* .table td {
+  white-space: normal;
+  background: white;
+}
+
+
+.table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+}
+
+
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease-in-out;
+} */
+
+
+/* .btn {
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.btn-submit-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.btn-submit-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-add-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
+}
+
+.btn-add-success:hover {
+  background-color: #218838;
+}
+
+.btn-return-danger {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+}
+
+.btn-return-danger:hover {
+  background-color: #c82333;
+}
+
+/* Button Container */
+/* .d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 4px 0;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card.issue-books {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  .card.issue-books h2 {
+    font-size: 20px;
+  }
+
+  .form-control {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form-label.text-gray {
+    font-size: 14px;
+  }
+
+  /* .table {
+    width: 100% !important;
+  }
+
+  .table th,
+  .table td {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  .btn {
+    padding: 3px 6px;
+    font-size: 11px;
+    height: 24px;
+    line-height: 1.4;
+    min-width: 45px;
+  }
+
+  .d-flex {
+    gap: 6px;
+    padding: 3px 0;
+  } */
+}
+
+@media (max-width: 576px) {
+  .card.issue-books {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .card.issue-books h2 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .form-label.text-gray {
+    font-size: 12px;
+  }
+
+  /* .table {
+    width: 100% !important;
+  }
+
+  .table th,
+  .table td {
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  .btn {
+    padding: 2px 4px;
+    font-size: 10px;
+    height: 24px;
+    line-height: 1.4;
+    min-width: 40px;
+  }
+
+  .d-flex {
+    gap: 4px;
+    padding: 2px 0;
+    flex-wrap: wrap;
+  } */
+
+  /* Specific adjustment for Action column */
+  .table td:last-child {
+    padding: 4px;
+    width: auto;
+  }
+}

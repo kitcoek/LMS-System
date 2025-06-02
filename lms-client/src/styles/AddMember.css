@@ -1,0 +1,193 @@
+/* General Container Styling */
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: black;
+  } */
+  
+  
+  .card.add-member {
+    width: 100%;
+    max-width: 400px; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f5e8c7; 
+    text-align: center;
+    position: relative; 
+    
+    overflow: hidden; 
+  }
+  
+  
+  .card.add-member::before {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: rgba(0, 123, 255, 0.1); 
+    z-index: 0; 
+  }
+  
+  
+  .card.add-member * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Form Title with a Special Underline Effect */
+  /* .card.add-member h2 {
+    color: #007bff; 
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+  } */
+  
+  /* .card.add-member h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #007bff, #00d4ff); 
+    border-radius: 2px;
+  } */
+  
+  
+  .form-control , .from-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #fff; 
+    border-radius: 5px;
+    background: transparent;
+    font-size: 16px;
+    color: #333; 
+    transition: all 0.3s ease; 
+  }
+  
+  
+  .form-control::placeholder {
+    color: #666; 
+  }
+  
+  /* Glow effect on hover/focus to indicate interactivity */
+  /* .form-control:hover,
+  .form-control:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+    outline: none;
+  } */
+  
+
+  .form-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+
+  .btn-primary-add {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 150px; 
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  /* Add a small icon inside the button */
+  /* .btn-primary::before {
+    
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    opacity: 0.7;
+  } */
+  
+  
+  .btn-primary-add span {
+    position: relative;
+    padding-left: 20px; 
+  }
+  
+  /* Button hover effect */
+  /* .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
+  }
+   */
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card.add-member {
+      width: 90%;
+      max-width: 350px;
+      padding: 15px;
+    }
+  
+    .card.add-member h2 {
+      font-size: 20px;
+    }
+  
+    .form-control {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .btn-primary-add {
+        padding: 3px 6px; 
+        font-size: 11px; 
+        height: 24px;
+        line-height: 1.4; 
+        min-width: 45px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card.add-member {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .card.add-member h2 {
+      font-size: 18px;
+    }
+  
+    .form-control {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .btn-primary-add {
+       
+            padding: 2px 4px; 
+            font-size: 10px; 
+            height: 24px; 
+            line-height: 1.4; 
+            min-width: 40px; 
+          
+    }
+  
+    .card.add-member::before {
+      font-size: 100px; 
+    }
+  }
