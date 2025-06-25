@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../bootstrap.css';
 import '../styles/AddMember.css';
 

@@ -10,7 +10,7 @@ import StudentBookTables from "./Components/StudentBookTables";
 import EditMember from "./Components/EditMember";
 import EditBook from "./Components/EditBook";
 
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "./App.css";
 // import "./bootstrap.css";

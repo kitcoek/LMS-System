@@ -2,7 +2,7 @@ import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import React, { useEffect, useState } from "react";
 import { Pie } from "react-chartjs-2";
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
 // import '../bootstrap.css'
 import '../App.css';
 ChartJS.register(ArcElement, Tooltip, Legend);
